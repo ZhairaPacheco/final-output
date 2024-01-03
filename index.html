@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<HTML>
+	<head>
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		<link rel="stylesheet" href="style.css">
+		<title>King Hotel</title>
+	</head>
+	
+	<body>
+		<header>
+			<h1 id = "king">King Hotel<hr id = "hr"></h1>
+			<div class = "navigation-container">
+				<button class = "navigation">Home</button>
+				<button class = "navigation">Gallery</button>
+				<button class = "navigation">Reserve</button>
+				<button class = "navigation">About</button>
+			</div>	
+		</header>
+	
+		<div class = "body2">
+			<div class = "container-box">	
+				
+				<div class ="mid">
+					<div class = "carousel">
+						<div class = "image-box" id = "imgs">
+							<img src = "kinghotel.png" alt = "King-Hotel">
+							<img src = "pool.jpg" alt = "Pool">
+							<img src = "lobby2.jpg" alt = "Lobby">
+							<img src = "fitness.jpg" alt = "Gym">
+							<img src = "onebed.jpg" alt = "Room">
+							<img src = "twobed.jpg" alt = "Room">
+							<img src = "vip.jpg" alt = "Vip-Room">
+						</div>
+						
+						<div class = "button-container">	
+							<div class = "button-box" id = "button-left">
+								<button id="left" class="btn"> < Previous </button>
+							</div>
+							
+							<div class = "button-box" id = "button-right">
+								<button id="right" class="btn"> Next > </button>
+							</div>
+						</div>	
+					</div>
+				</div>
+				<div class = "inquiry-box">
+					<h1>King Hotel</h1>
+					<p class = "details">KING HOTEL, A LUXURY COLLECTION HOTEL, SEOUL GANGNAM</p>
+					<p class = "details">Location: 322, Sowol-ro, Yongsan-gu, Yongsan-Gu, 04347 Seoul, South Korea</p>
+					<p class = "details">For inquiries: +82 2-727-7200</p>
+				</div>
+				
+				<hr class = "two">
+				
+				<div class = "reservation-box">
+					<div class = "form-box" id = "form">
+						<h2>Reservation Form</h2>
+						<p class = "details">Please complete the form below.</p>
+						<p class = "details">Your registration will be verified prior to your arrival.</p>
+					</div>
+					
+					<div class = "input-box" id = "inputs">
+						<form class = "form-box">
+							<p class = "customize">Full Name</p>
+							<div class = "align">	
+								<label for = "name1-id" class = "style">
+									<input type="text" name="first-name" placeholder="Enter First Name" class="edit" id="name1-id">
+									<br>First Name
+								</label>
+								
+								<label for = "name2-id" class = "style">
+									<input type="text" name="last-name" placeholder="Enter Last Name" class="edit" id="name2-id">
+									<br>Last Name							
+								</label>
+							</div>	
+							<hr class = "two">
+							<p class = "customize">Address</p>	
+							<div class = "align">	
+								<label for = "state-id" class = "style">
+									<input type="text" name="state" class="edit" id="state-id">
+									<br>State/Province
+								</label>
+								<label for = "code" class = "style">
+									<input type="text" name="zip" class="edit" id="code"> 
+									<br>Postal/Zip code 
+								</label>
+							</div>
+							<div class = "align">
+								<label for = "city-id" class = "style">
+									<input type="text" name="city" class="edit" id="city-id">
+									<br>City
+								</label>
+								<label for = "brgy" class = "style">
+									<input type="text" name="barangay" class="edit" id="brgy">
+									<br>Barangay 
+								</label>
+							</div>
+							<div class = "address">
+								<label for = "str" class = "style">
+									<input type="text" name="street" class="edit" id="str">
+									<br>Street Address 
+								</label>
+								<br>
+								<label for = "fullAdd" class = "style">
+									<input type="text" name="full" class="edit" id="fullAdd">  
+									<br>Full Address 
+								</label>
+							</div>
+							<hr class = "two">
+							<p class = "customize">Contact Information</p>
+							<div class = "align">	
+								<label for = "phone" class = "style">
+								<input type="tel" pattern="[0-9]{11}" placeholder= "09*********" class="edit" id="phone"/>
+								<br>Phone Number
+								</label>	
+								<label for = "un" class = "style">	
+								<input type="email" name="username" placeholder="example@example.com" class="edit" id="un"/>
+								<br>Email
+								</label>
+							</div>	
+							
+							<p class = "customize">Arrival - Date & Time</p>
+							<div class = "dt">	
+								<label for="mdy" class = "style">
+									<input type="date" class="edit" id="mdy" />
+									<br>Date
+								</label>
+								
+								<label for="hms" class = "style">
+									<input type="time" class="edit" id="hms" >
+									<br>Time
+								</label>
+							</div>	
+							<p class = "customize">Departure - Date & Time</p>
+							<div class = "dt">
+								<label for="mdy" class = "style">
+									<input type="date" class="edit" id="mdy" />
+									<br>Date
+								</label>
+								
+								<label for="hms" class = "style">
+									<input type="time" class="edit" id="hms">
+									<br>Time
+								</label>
+							</div>	
+							<br>
+							<div class = "align">
+								<label for="adult" class = "style">Number of Adults
+								<br>
+								<input type="text" name="title" pattern="[0-9]{3}" placeholder="ex: 7" class="edit" id="adult">
+								</label>
+								<label for="kid" class = "style">Number of Kids (if there are any)
+								<br>
+								<input type="text" name="title" pattern="[0-9]{3}" placeholder="ex: 7" class="edit" id="kid">
+								</label>
+							</div>	
+							<p class = "customize" id = "payment">Payment Method
+								<div class = "method">	
+									<label class="style">
+										<input type="radio" name="radio" class = "edit" id = "check">Check
+									</label>
+									<label class="style">
+										<input type="radio" name="radio" class = "edit" id = "paypal">Paypal
+									</label>
+								</div>	
+							</p>
+							<br>
+						
+						</form>
+						
+						<div class = "row">
+							<div class = "column">
+								<img src = "mountain view.jpg" alt = "bed with mountain view" class = "images">
+								<p class="style" id = "p">One queen size bed with mountain view</p>
+							</div>
+							<div class = "column">
+								<img src = "ocean view.jpg" alt = "bed with ocean view" class = "images">
+								<p class="style" id = "p">One twin bed & One king bed with ocean view</p>
+							</div>
+							<div class = "column" >
+								<img src = "city view.jpg" alt = "bed with city view" class = "images">
+								<p class="style" id = "p">Two king size bed with city view</p>
+							</div>
+								
+						</div>
+						
+						<form class = "form-box2">
+							<div class = "expense-box">
+								<br>
+								
+								<div class = "space">
+									<label class="customize" id="mount">
+										<input type="radio" name="amount" class = "edit" id = "mv" data-price="5600">PHP 5,600.00/Night - Mountain View 
+									</label>
+									<span>PHP 5,600.00<span>
+								</div>
+								
+								<br>
+								<label>Number of Nights</label>
+								<input type="text" name="title" pattern="[0-9]{3}" placeholder="0" class="num" id="num1">
+								<hr class = "one">
+								<br>
+								
+								<div class = "space">
+									<label class="customize" id="ocean" >
+										<input type="radio" name="amount" class = "edit" id = "ov" data-price="6700" >PHP 6,700.00/Night - Ocean View 
+									</label>
+									<span>PHP 6,700.00<span>
+								</div>
+								
+								<br>
+								<label>Number of Nights</label>
+								<input type="text" name="title" pattern="[0-9]{3}" placeholder="0" class="num" id="num2">
+								<hr class = "one">
+								<br>
+								
+								<div class = "space">
+								<label class="customize" id="city2">
+									<input type="radio" name="amount" class = "edit" id = "cv" data-price="7800">PHP 7,800.00 - City View 
+								</label>
+								<span>PHP 7,800.00<span>
+								</div>
+								
+								<br>
+								<label>Number of Nights</label>
+								<input type="text" name="title" pattern="[0-9]{3}" placeholder="0" class="num" id="num3">
+								<hr class = "two">
+
+								<div class = "space" id = "update">
+									<p class="customize" id="total">Total</p><span id = "totalAmount">PHP 0.00<span>
+								</div>
+							</div>
+							
+							<p class="customize">Do you have any Special Request?</p>
+							<input type="text" name="title" placeholder="Type here..." class="edit" id="comment">
+						</form>
+					</div>
+					<br>
+					<hr class = "two">
+					<div id="btn-container">
+						<button id="submit">Submit</button>
+					</div>
+				</div>
+			</div>
+		</div>	
+		<script src="script.js"></script>
+	</body>
+</HTML>
