@@ -60,11 +60,9 @@ function checkAllInputs() {
         }
 }
 
-// Get all radio buttons and number input fields
     var radioButtons = document.querySelectorAll('input[name="amount"]');
     var numInputs = document.querySelectorAll('.num');
     
-    // Attach event listeners to radio buttons and number inputs
     radioButtons.forEach(function(radio) {
         radio.addEventListener('change', updateTotal);
     });
@@ -73,7 +71,6 @@ function checkAllInputs() {
         input.addEventListener('input', updateTotal);
     });
 
-    // Function to update the total based on selected radio button and number of nights
     function updateTotal() {
         var selectedRadio = document.querySelector('input[name="amount"]:checked');
         var totalSpan = document.getElementById('totalAmount');
